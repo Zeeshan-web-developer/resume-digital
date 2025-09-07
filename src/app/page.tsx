@@ -14,7 +14,24 @@ import {
   Star,
   FileDown,
 } from "lucide-react";
+import type { Variants } from "framer-motion";
+const container: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.08, delayChildren: 0.15 },
+  },
+};
 
+const item: Variants = {
+  hidden: { opacity: 0, y: 18, scale: 0.98 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { type: "spring" as const, stiffness: 140, damping: 18 },
+  },
+};
 // Full, unique "Sunny Glass" resume — now with complete Experience, Projects, Education, Certificates & Awards
 
 const data = {
@@ -115,15 +132,15 @@ const data = {
   ],
 };
 
-const container = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { staggerChildren: 0.08, delayChildren: 0.15 } },
-};
+// const container = {
+//   hidden: { opacity: 0 },
+//   show: { opacity: 1, transition: { staggerChildren: 0.08, delayChildren: 0.15 } },
+// };
 
-const item = {
-  hidden: { opacity: 0, y: 18, scale: 0.98 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 140, damping: 18 } },
-};
+// const item = {
+//   hidden: { opacity: 0, y: 18, scale: 0.98 },
+//   show: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 140, damping: 18 } },
+// };
 
 export default function ResumeSunnyFull() {
   return (
@@ -305,7 +322,7 @@ export default function ResumeSunnyFull() {
   );
 }
 
-function Section({ title, icon, children }) {
+function Section({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <section className="mb-8">
       <div className="mb-3 flex items-center gap-2">
@@ -319,7 +336,7 @@ function Section({ title, icon, children }) {
   );
 }
 
-function InfoPill({ icon, children }) {
+function InfoPill({ icon, children }: { icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-amber-200/70 bg-white/70 px-3 py-1 text-sm shadow-sm">
       {icon}
@@ -328,7 +345,7 @@ function InfoPill({ icon, children }) {
   );
 }
 
-function InfoLink({ href, icon, children }) {
+function InfoLink({ href, icon, children }: { href: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <a href={href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-amber-200/70 bg-white/70 px-3 py-1 text-sm shadow-sm hover:underline">
       {icon}
