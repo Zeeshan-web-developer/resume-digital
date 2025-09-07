@@ -178,7 +178,7 @@ export default function ResumeSunnyFull() {
             <div className="flex items-center gap-4">
               <div className="relative h-28 w-28 overflow-hidden rounded-2xl ring-2 ring-amber-300/70 shadow-md">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-200 via-yellow-100 to-orange-200" />
-                <div className="absolute inset-0 bg-[url('https://media.licdn.com/dms/image/v2/D4D03AQEGEWIDkMbkLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726157746965?e=1759968000&v=beta&t=EedxWrjsoTitKSINOzWQ9o4d2fedWzndCpRGpUke2jI')] bg-cover bg-center mix-blend-multiply" />
+                <div className="absolute inset-0 bg-[url('/mypic.jpeg')] bg-cover bg-center mix-blend-multiply" />
               </div>
               <div>
                 <h1 className="text-3xl font-black md:text-4xl">{data.name}</h1>
