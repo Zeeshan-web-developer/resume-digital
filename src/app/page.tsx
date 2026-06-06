@@ -36,28 +36,40 @@ const item: Variants = {
 
 const data = {
   name: "Zeeshan Ahmad",
-  title: "Full‑Stack Developer",
+  title: "Senior Frontend Engineer",
   location: "Hyderabad, India",
   email: "zeeshan1361@gmail.com",
   phone: "+91-7006304092",
   github: "https://github.com/Zeeshan-web-developer",
   linkedin: "https://linkedin.com/in/zeeshan-ahmad-dar",
   summary:
-    "Creative Full‑Stack Developer with 5+ years building scalable web apps and tooling. I blend product focus with strong technical skills — Next.js, React, Node, Spring Boot, and AWS — to ship high-performance, maintainable systems.",
+    "Senior Frontend Engineer with 5+ years of experience building large-scale web applications using React, Next.js, TypeScript, and modern frontend architectures. Experienced in Microfrontend architecture, Monorepo design, performance optimization, SEO, and cloud-native deployments. Proven track record of leading migrations, improving developer productivity, reducing release cycles, and delivering scalable products serving thousands of users.",
   skills: {
-    Frontend: ["React.js", "Next.js", "Tailwind CSS", "Redux", "Ant Design", "Tiptap"],
-    Backend: ["Node.js", "Express.js", "Spring Boot", "Microservices", "Erlang (XMPP)"],
+    Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "Redux Toolkit", "React Query", "Tailwind CSS", "Ant Design", "Bootstrap"],
+    Backend: ["Node.js", "Express.js", "Spring Boot", "Microservices"],
+    Testing:["Vitest", "Jest", "React Testing Library"],
     Databases: ["MySQL", "MongoDB"],
     Cloud_Tools: ["AWS", "S3", "CloudFront", "Sentry", "LogRocket"],
-    Languages: ["JavaScript", "TypeScript", "Java"],
-    Soft_Skills: ["Leadership", "Mentoring", "Cross‑team Collaboration"],
+    Architecture:["Microfrontends", "Monorepos (Turborepo)", "Design Systems", "Component Libraries", "Feature-Driven Architecture"]
   },
   experience: [
+   {
+      company: "ValueLabs LLP",
+      role: "Senior Software Engineer III",
+      location: "Hyderabad, India",
+      period: "Dec 2025 – April 2026",
+      bullets: [
+        "Led the architecture and implementation of a Microfrontend ecosystem using React and Vite, enabling independent deployment and scaling of frontend domains.",
+        "Designed and maintained a Turborepo-based monorepo supporting multiple applications and shared packages, improving build performance through caching and parallel execution.",
+        "Developed a reusable design system and UI component library consumed across micro-applications, ensuring consistency and reducing duplicated development effort.",
+        "Implemented advanced code-splitting, lazy loading, and dependency-sharing strategies, improving application performance and bundle efficiency.",
+      ],
+    },
     {
       company: "Head Digital Works",
-      role: "Full‑Stack Developer",
+      role: "Senior Software Engineer III",
       location: "Hyderabad, India",
-      period: "Nov 2024 – Present",
+      period: "Nov 2024 – Sep 2025",
       bullets: [
         "Migrated A23’s WordPress blog to a Spring Boot + MySQL stack to improve scalability and security.",
         "Built an SEO‑optimized frontend in Next.js + Tailwind and used SSG/ISR to improve performance and organic traffic.",
